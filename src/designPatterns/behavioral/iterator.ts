@@ -4,6 +4,13 @@ import {
 } from "../../util/consumption";
 import { fakePromise } from "../../util/promise";
 
+/**
+ * All iterators must implement the same interface. This makes the client code
+ * compatible with any collection type or any traversal algorithm as long as
+ * there’s a proper iterator. If you need a special way to traverse a collection,
+ * you just create a new iterator class, without having to change the collection
+ * or the client.
+ */
 interface Iterator<T> {
   // Return the current element.
   current(): IteratorResult<T>;
