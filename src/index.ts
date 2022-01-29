@@ -1,1 +1,1 @@
-import "./SOLID/open-closed";
+import "./designPatterns/creational/factory";
