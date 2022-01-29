@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "npx nodemon",
-    "start": "npx nodemon"
+    "start": "npx nodemon",
+    "watch": "tsc -w"
   },
   "license": "ISC",
   "devDependencies": {
