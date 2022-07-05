@@ -1,6 +1,6 @@
 import { Department } from "./classes/department";
-import { ItDepartment } from "./classes/itDepartment";
-import { AccountingDepartment } from "./classes/accountingDepartment";
+import { ItDepartment } from "./classes/it-department";
+import { AccountingDepartment } from "./classes/accounting-department";
 
 // -- ItDepartment Class --------------------------------------------------------------------
 const itDepartment = new ItDepartment("2ec527ee-75dd-11ec-90d6-0242ac120003", [

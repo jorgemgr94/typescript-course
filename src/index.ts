@@ -1,1 +1,1 @@
-import "./designPatterns/creational/factory";
+import "./data-structures/stack";
