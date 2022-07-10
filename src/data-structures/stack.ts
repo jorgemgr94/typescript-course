@@ -1,10 +1,6 @@
 /**
  * Stack: LIFO (last-in first-out)
  * provides a unique way to work with contiguous memory.
- *
- * Time Complexity:
- * Access Search	Insertion Deletion
- * O(n)	  O(n)	  O(1)		  O(1)
  */
 interface StackInterface<T> {
   push(element: T): void;
