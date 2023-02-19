@@ -1,1 +1,1 @@
-import "./data-structures/SinglyLinkedList";
+import "./data-structures/Stack";
