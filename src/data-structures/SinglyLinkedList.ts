@@ -11,7 +11,9 @@ interface SinglyLinkedListInterface<T> {
   insertAt(item: T, index: number): void;
   prepend(item: T): void;
   remove(item: T): void;
-  removeAt(index: number): void;
+  removeAt(index: number): T | undefined;
+  size(): number;
+  isEmpty(): boolean;
 }
 
 type SinglyLinkedListNode<T> = {
@@ -24,6 +26,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
   tail: SinglyLinkedListNode<T> | null = null;
   length: number = 0;
 
+  /**
+   * O(1)
+   */
   append(item: T): void {
     this.length++;
     const node: SinglyLinkedListNode<T> = {
@@ -41,6 +46,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     this.tail = node;
   }
 
+  /**
+   * O(1)
+   */
   prepend(item: T): void {
     this.length++;
 
@@ -60,6 +68,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     return;
   }
 
+  /**
+   * O(N)
+   */
   remove(item: T) {
     const { current, previous } = this.get(item);
     if (!current) return; /*not found*/
@@ -79,6 +90,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     return;
   }
 
+  /**
+   * O(N)
+   */
   insertAt(item: T, index: number) {
     const { current, previous } = this.getAt(index);
 
@@ -111,15 +125,18 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     return;
   }
 
+  /**
+   * O(N)
+   */
   removeAt(index: number) {
     const { current, previous } = this.getAt(index);
-    if (!current) return; /*not found*/
+    if (!current) return undefined; /*not found*/
 
     this.length--;
     // removing the head
     if (!previous) {
       this.head = current.next;
-      return;
+      return current.value;
     }
 
     // reassign previous element;
@@ -129,9 +146,12 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     if (current.next === null /*reach the tail*/) {
       this.tail = previous;
     }
-    return;
+    return current.value;
   }
 
+  /**
+   * O(N)
+   */
   getAt(index: number) {
     let current = this.head;
     let previous = null;
@@ -147,6 +167,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     return { current, previous };
   }
 
+  /**
+   * O(N)
+   */
   get(item: T) {
     let current: SinglyLinkedListNode<T> | null = this.head;
     let previous = null;
@@ -159,6 +182,9 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     return { current, previous };
   }
 
+  /**
+   * O(N)
+   */
   toArray() {
     let current = this.head;
     const listArray = [];
@@ -168,11 +194,18 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     }
     return listArray;
   }
+
+  /**
+   * O(1)
+   */
+  isEmpty() {
+    return this.length === 0;
+  }
+
+  /**
+   * O(1)
+   */
+  size() {
+    return this.length;
+  }
 }
-
-const singlyLinkedList = new SinglyLinkedList<number>();
-singlyLinkedList.append(4);
-singlyLinkedList.append(8);
-singlyLinkedList.insertAt(12, 2);
-
-console.log(singlyLinkedList);
