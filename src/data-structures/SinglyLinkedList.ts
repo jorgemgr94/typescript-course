@@ -37,7 +37,6 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
       return;
     }
 
-    // JMGR doble check this
     this.tail.next = node;
     this.tail = node;
   }
@@ -158,6 +157,16 @@ export class SinglyLinkedList<T> implements SinglyLinkedListInterface<T> {
     }
 
     return { current, previous };
+  }
+
+  toArray() {
+    let current = this.head;
+    const listArray = [];
+    while (current !== null) {
+      listArray.push(current.value);
+      current = current.next;
+    }
+    return listArray;
   }
 }
 
