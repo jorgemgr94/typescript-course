@@ -1,1 +1,1 @@
-import "./data-structures/Stack";
+import "./data-structures/Map";
