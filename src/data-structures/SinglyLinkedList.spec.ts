@@ -146,4 +146,12 @@ describe("SingleLinkedList", () => {
       expect(list.tail?.value).toBe(2);
     });
   });
+
+  describe("toArray", () => {
+    it("should return the list as an array", () => {
+      list.append(1);
+      list.append(2);
+      expect(list.toArray()).toEqual([1, 2]);
+    });
+  });
 });

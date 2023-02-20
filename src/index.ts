@@ -1,1 +1,1 @@
-import "./data-structures/DoublyLinkedList";
+import "./data-structures/Queue";
