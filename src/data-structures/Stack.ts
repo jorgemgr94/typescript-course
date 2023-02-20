@@ -1,6 +1,5 @@
 /**
  * Definition: LIFO (last-in first-out), provides a unique way to work with contiguous memory.
- * NOTE: This could be implemented using a Doubly Linked List, but, should be viable because of memory?
  */
 interface StackInterface<T> {
   push(item: T): void /*input a new element*/;
