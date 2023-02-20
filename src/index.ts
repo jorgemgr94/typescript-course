@@ -1,1 +1,1 @@
-import "./data-structures/StackList";
+import "./data-structures/DoublyLinkedList";
