@@ -26,14 +26,13 @@ export class Queue<T> extends DoublyLinkedList<T> implements QueueInterface<T> {
     if (!this.head) return undefined;
 
     this.length--;
-    const headNode = this.head;
-    const nextNode = this.head.next;
+    const head = this.head;
+    this.head = this.head.next;
 
-    this.head = nextNode;
-    if (nextNode) nextNode.previous = null;
-    if (!nextNode) this.tail = null;
+    // free
+    head.next = null;
 
-    return headNode?.value;
+    return head.value;
   }
 
   front() {
