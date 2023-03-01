@@ -893,7 +893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.4.0":
+"@types/jest@npm:29.4.0":
   version: 29.4.0
   resolution: "@types/jest@npm:29.4.0"
   dependencies:
@@ -903,10 +903,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.14.0":
-  version: 18.14.0
-  resolution: "@types/node@npm:18.14.0"
-  checksum: d83fcf5e4ed544755dd9028f5cbb6b9d46235043159111bb2ad62223729aee581c0144a9f6df8ba73d74011db9ed4ebd7af2fd5e0996714e3beb508a5da8ac5c
+"@types/node@npm:*, @types/node@npm:18.14.2":
+  version: 18.14.2
+  resolution: "@types/node@npm:18.14.2"
+  checksum: 53c07e721f6ae33de71306f6a0b75dae6066a4f55bd5484c93bd59ff25f0c5f004ceafeef509a4d0cb9e24a247efc34d50489bcc1b05a53ecc68e2fc088e65cb
   languageName: node
   linkType: hard
 
@@ -1546,9 +1546,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.284":
-  version: 1.4.313
-  resolution: "electron-to-chromium@npm:1.4.313"
-  checksum: 694c379e0800e55e3e2966f73557bfc3bad66e1eb120928d33e8f0619b59ec057eb94ecb27a06e6f7ea1892565f6b8a87b03129a8243baa0d1ccea9579040a83
+  version: 1.4.314
+  resolution: "electron-to-chromium@npm:1.4.314"
+  checksum: c6d0c7158e663e5a3ea90c2adeb242b182d8c9c453a530158e3c10292c8507615e469c680771f6fab0166e59afc146546e4bfd8fec952a8c26c315ddcedf0b21
   languageName: node
   linkType: hard
 
@@ -2549,7 +2549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.4.3":
+"jest@npm:29.4.3":
   version: 29.4.3
   resolution: "jest@npm:29.4.3"
   dependencies:
@@ -2668,9 +2668,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^7.7.1":
-  version: 7.17.0
-  resolution: "lru-cache@npm:7.17.0"
-  checksum: 28c2a98ad313b8d61beac1f08257b6f0ca990e39d24a9bc831030b6e209447cfb11c6d9d1a774282189bfc9609d1dfd17ebe485228dd68f7b96b6b9b7740894e
+  version: 7.18.0
+  resolution: "lru-cache@npm:7.18.0"
+  checksum: 5bdf0a23658bf4a2d9f72aeaa826ad808aeb722ab87eb52554d5adb10b241331ff087ca34d85cf17e4a8a4fbce23c65b4e3475b61ba1bff19cff2a16d10396b1
   languageName: node
   linkType: hard
 
@@ -3588,7 +3588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.0.5":
+"ts-jest@npm:29.0.5":
   version: 29.0.5
   resolution: "ts-jest@npm:29.0.5"
   dependencies:
@@ -3677,11 +3677,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "typescript-learning@workspace:."
   dependencies:
-    "@types/jest": ^29.4.0
-    "@types/node": 18.14.0
-    jest: ^29.4.3
+    "@types/jest": 29.4.0
+    "@types/node": 18.14.2
+    jest: 29.4.3
     nodemon: 2.0.20
-    ts-jest: ^29.0.5
+    ts-jest: 29.0.5
     ts-node: 10.9.1
     typescript: 4.9.5
   languageName: unknown
