@@ -1,1 +1,1 @@
-import "./design-patterns/structural/proxy";
+import "./design-patterns/behavioral/observer";
