@@ -1,1 +1,1 @@
-import "./design-patterns/structural/facade";
+import "./design-patterns/structural/proxy";
