@@ -1,1 +1,1 @@
-import "./design-patterns/behavioral/state";
+import "./design-patterns/structural/adapter";
